@@ -27,18 +27,18 @@ const productObjInfo3 =
 }
 
 
-function showProductInformation(reciveFromObject) {
+function showProductInformation(reciveFromObject,productArgument='Default value') {
 
-return `product name is :${reciveFromObject.productName} product weight is : ${reciveFromObject.productPrice} product quntity is : ${reciveFromObject.productQuantity} product ableable :${reciveFromObject.productAbailabe}`;
+return `${productArgument} product name is :${reciveFromObject.productName} product weight is : ${reciveFromObject.productPrice} product quntity is : ${reciveFromObject.productQuantity} product ableable :${reciveFromObject.productAbailabe}`;
 
 
 }
 // showProductInformation(productObjInfo);
 // showProductInformation(productObjInfo2);
 
-const recive =showProductInformation(productObjInfo3);
+const recive =showProductInformation(productObjInfo3 ,'productArgument1');
 const recive2 =showProductInformation(productObjInfo2);
-const recive3 =showProductInformation(productObjInfo);
+const recive3 =showProductInformation(productObjInfo,'productArgument3');
 console.log(recive);
 console.log(recive2);
 console.log(recive3);
