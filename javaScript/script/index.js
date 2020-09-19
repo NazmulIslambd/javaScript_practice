@@ -26,21 +26,33 @@ const productObjInfo3 =
     productAbailabe: true
 }
 
+//object data distucturing 
+
+// const {productName,productPrice}=productObjInfo3;
+// console.log(productName);
+
 
 function showProductInformation(reciveFromObject,productArgument='Default value') {
-
-return `${productArgument} product name is :${reciveFromObject.productName} product weight is : ${reciveFromObject.productPrice} product quntity is : ${reciveFromObject.productQuantity} product ableable :${reciveFromObject.productAbailabe}`;
+    //here is data distucturing 
+   const {productName,productPrice,productQuantity,productAbailabe} =  reciveFromObject;
+//when we deploy distucturing don't need keep name parameter for show the result.
+return `${productArgument} product name is : ${productName} product weight is : ${productPrice} product quntity is : ${productQuantity} product ableable :${productAbailabe}`;
 
 
 }
 // showProductInformation(productObjInfo);
 // showProductInformation(productObjInfo2);
 
-const recive =showProductInformation(productObjInfo3 ,'productArgument1');
+const recive1 =showProductInformation(productObjInfo3 ,'productArgument1');
 const recive2 =showProductInformation(productObjInfo2);
 const recive3 =showProductInformation(productObjInfo,'productArgument3');
-console.log(recive);
+console.log(recive1);
 console.log(recive2);
 console.log(recive3);
 
+
+//here is array distucturing
+const productArray= ['followe',30,3,true];
+const[name,price,quntity,abailalbe]=productArray;
+console.log(name);
 
