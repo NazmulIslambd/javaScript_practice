@@ -1,25 +1,46 @@
+// const arrayObject=[
+//     'potato',30,3,true
+// ];
+// console.log(arrayObject[0]);
+// console.log(arrayObject[3]);
 
-const productInformation2 = {
-    productName: 'banna',
-    price: 20,
-    weight: 10
+const productObjInfo =
+{
+    productName: 'potato',
+    productPrice: 30,
+    productQuantity: 3,
+    productAbailabe: true
 }
-
-const productInformation3= {
+const productObjInfo2 =
+{
+    productName: 'alo',
+    productPrice: 30,
+    productQuantity: 3,
+    productAbailabe: true
+}
+const productObjInfo3 =
+{
     productName: 'onion',
-    price: 40,
-    weight: 100
-}
-const productInformation1 = {
-    productName: 'kola',
-    price: 40,
-    weight: 100
+    productPrice: 30,
+    productQuantity: 3,
+    productAbailabe: true
 }
 
-function showProduct(product) {
-    
-    return `Product Name ${product.productName} price is ${product.price} weight is ${product.weight}`;
-}
-const recived = showProduct(productInformation1);
 
-console.log(recived);
+function showProductInformation(reciveFromObject) {
+
+return `product name is :${reciveFromObject.productName} product weight is : ${reciveFromObject.productPrice} product quntity is : ${reciveFromObject.productQuantity} product ableable :${reciveFromObject.productAbailabe}`;
+
+
+}
+// showProductInformation(productObjInfo);
+// showProductInformation(productObjInfo2);
+
+const recive =showProductInformation(productObjInfo3);
+const recive2 =showProductInformation(productObjInfo2);
+const recive3 =showProductInformation(productObjInfo);
+console.log(recive);
+console.log(recive2);
+console.log(recive3);
+
+
