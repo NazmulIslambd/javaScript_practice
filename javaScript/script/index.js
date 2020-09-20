@@ -1,18 +1,22 @@
-const productPrice = 9;
+const productPrice = 70;
 
 let freeShipping = false;
 let handPicked = false;
 
-if (productPrice >= 100) {
-    freeShipping = true;
-    handPicked = false
-} else if (productPrice >= 60) {
-    freeShipping = false;
-    handPicked = true
-}
-else {
-    freeShipping = false;
-    handPicked = true;
-}
-console.log(freeShipping)
+//condition ? trueOutput : falseOUtput 
+
+freeShipping = productPrice >= 100 ? true : false
+console.log(freeShipping);
+
+handPicked = productPrice >= 60 && productPrice < 100 ? true : false;
 console.log(handPicked)
+
+// ! Here is important note
+true && false
+false
+true || false
+true
+true && false
+false
+true || false
+true
